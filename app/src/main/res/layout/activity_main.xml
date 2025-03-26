@@ -52,6 +52,7 @@
             />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnBangunRuang"
             android:layout_width="300dp"
             android:layout_gravity="center"
             android:layout_height="wrap_content"
@@ -73,14 +74,12 @@
             android:layout_marginBottom="10dp"
             />
 
-
-
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnTelepon"
             android:layout_width="300dp"
             android:layout_gravity="center"
             android:layout_height="wrap_content"
             android:text="Telepon"
-            android:ems="10"
             android:background="@drawable/background_button"
             android:textColor="@color/white"
             android:textAllCaps="false"
