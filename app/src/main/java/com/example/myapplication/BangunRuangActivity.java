@@ -14,7 +14,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class BangunRuangActivity extends AppCompatActivity {
-    private Button btnHasilHitung;
+    private Button btnHasilHitung, btnBack;
     private EditText sisi;
 
 //    private TextView luasKubus;
@@ -26,6 +26,7 @@ public class BangunRuangActivity extends AppCompatActivity {
     private void initComponents() {
         btnHasilHitung = findViewById(R.id.btnHitung);
         sisi = findViewById(R.id.editSisi);
+        btnBack = findViewById(R.id.btnBack);
     }
 
 
@@ -65,15 +66,15 @@ public class BangunRuangActivity extends AppCompatActivity {
         initComponents();
         // Event Listener ke halaman hasil hitung
         btnHasilHitung.setOnClickListener(new View.OnClickListener() {
-
-
-
-
-
             @Override
             public void onClick(View v) {
                 halHasilHitung();
             }
+        });
+
+        btnBack.setOnClickListener((v) -> {
+            Intent intentBack = new Intent(BangunRuangActivity.this, MainActivity.class);
+            startActivity(intentBack);
         });
 
 
